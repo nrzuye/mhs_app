@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.siakadakademik.mhs_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.new">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.new"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivityList" />
+        <activity android:name=".MainActivityMhs" />
+        <activity android:name=".DetailNews" />
+        <activity android:name=".DetailMhs" />
+        <activity android:name=".Trai" />
+        <activity android:name=".Total" />
+        <activity android:name=".MhsAktif" />
+        <activity android:name=".MhsCuti" />
+        <activity android:name=".MhsNonaktif" />
+        <activity android:name=".PeriodeActivity" />
+        <activity android:name=".ActivityProdi" />
+        <activity android:name=".Detail_Profil_Mhs" />
+        <activity
+            android:name=".TranskipActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KhsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KrsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TagihanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fragment_StoryList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fragment_DetailStory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DrawActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PopActivity_Logout"
+            android:theme="@style/AppTheme.PopCoy" />
+        <activity
+            android:name=".Activity_Empty_Notification"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/AppTheme.new"/>
+
+        <service
+            android:name=".firebase.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

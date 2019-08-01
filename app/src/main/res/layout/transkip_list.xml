@@ -1,0 +1,130 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayouttranskip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorprimarywhite">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/toolbar_collapsing" >
+
+        </include>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/topheader"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL SKS"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:id="@+id/totalsks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/totalsks"
+                    android:text="IPK"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:id="@+id/ipk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/totalsks"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bg_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:background="@drawable/ic_no_item"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/header_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="20dp"
+            android:text="@string/msg_Oops" />
+        <TextView
+            android:id="@+id/no_item_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/msg_empty_khs" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ListView
+        ads:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/lsv_cat_item_transkip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000">
+
+    </ListView>
+
+
+</android.support.design.widget.CoordinatorLayout>

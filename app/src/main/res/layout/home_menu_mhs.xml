@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_true">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ln_krs"
+                android:clickable="true"
+                android:background="@drawable/list_row_selector"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="37dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/krs_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/count"
+                    android:text="KRS"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_khs"
+                android:clickable="true"
+                android:background="@drawable/list_row_selector"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="37dp"
+                    android:background="@drawable/khs_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:text="KHS"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ln_keuangan"
+                android:clickable="true"
+                android:background="@drawable/list_row_selector"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="37dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/keuangan_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:text="KEUANGAN"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_transkip"
+                android:clickable="true"
+                android:background="@drawable/list_row_selector"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="37dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/transkip_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:text="NILAI"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,98 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCCE3F5"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <include layout="@layout/toolbar_collapsing">
+                    </include>
+
+                    <include
+                        layout="@layout/header_ipk_transkip"
+                        android:visibility="gone"
+                        android:id="@+id/header_ipk_transkip">
+                    </include>
+
+
+            </android.support.design.widget.AppBarLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    ads:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:id="@+id/recycler_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+             <LinearLayout
+                android:id="@+id/bg_empty"
+                android:layout_marginTop="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_no_item" />
+
+                <TextView
+                    android:id="@+id/no_item_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="@string/msg_no_news" />
+
+                 <TextView
+                     android:id="@+id/textback"
+                     android:layout_marginTop="30dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:drawableStart="@drawable/ic_arrow_back"
+                     android:textStyle="bold"
+                     android:text="Reload"
+                     android:textSize="15dp"
+                     android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal|center_vertical|center"
+                    android:visibility="gone">
+
+                </ProgressBar>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

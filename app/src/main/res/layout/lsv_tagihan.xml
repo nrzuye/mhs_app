@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="2dp"
+        card_view:cardElevation="1sp"
+        card_view:cardUseCompatPadding="false">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0"
+            app:mrl_rippleColor="#007bff"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp">
+
+                <ImageView
+                    android:id="@+id/news_image"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="22dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_icn_payments" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/nim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/nama_mhs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/prodi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/kode_tagihan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/nama_tagihan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/kodemk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/namamk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/jml_tagihan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/status_tagihan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/periode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/idperiode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

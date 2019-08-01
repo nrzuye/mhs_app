@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="79dp"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:background="@drawable/umglogo"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:height="32dp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:lineSpacingMultiplier="1.33"
+            android:theme="@style/Welcome"
+            android:text="Welcome,"
+            android:width="107dp"
+            android:paddingLeft="38dp"
+            />
+        <TextView
+            android:height="19dp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:lineSpacingMultiplier="1.36"
+            android:theme="@style/ToSiakadUmGresik"
+            android:text="To Siakad UM Gresik"
+            android:width="131dp"
+            android:paddingLeft="38dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="100dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="100dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_bg_button_login"
+            android:shadowColor="#FF4A90E2"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_register"-->
+            <!--android:layout_width="122dp"-->
+            <!--android:layout_height="29dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:background="@drawable/background_btn3"-->
+            <!--android:text="Register"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="10sp"-->
+            <!--android:textStyle="bold" />-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

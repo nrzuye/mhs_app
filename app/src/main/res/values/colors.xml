@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFCCE3F5</color>
+    <color name="colorPrimaryDark">#65cbf2</color>
+    <color name="colorprimarywhite">#ffffff</color>
+    <color name="colorAccent">#91bcf5</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="card_color">#85ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="text_color">#525252</color>
+    <color name="divider">#f2f2f2</color>
+    <color name="background_color">#f2f2f2</color>
+    <color name="colorBackground">#29B6F6</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <!--swipe down refresh animation color-->
+    <color name="orange">#FF9900</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+    <color name="red">#ff0015</color>
+
+</resources>

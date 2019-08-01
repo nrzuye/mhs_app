@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:title="@string/menu_search"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+			<!--&lt;!&ndash; Rate App &ndash;&gt;-->
+			<!--<item android:id="@+id/home"-->
+				<!--android:title="@string/menu_khs"-->
+				<!--app:showAsAction="never"/>-->
+        <!---->
+		    <!--&lt;!&ndash; Rate App &ndash;&gt;-->
+		    <!--<item android:id="@+id/menu_rateapp"-->
+		          <!--android:title="@string/menu_rateapp"-->
+                  <!--app:showAsAction="never"/>-->
+		    <!---->
+		    <!--&lt;!&ndash; More App &ndash;&gt;-->
+		    <!--<item android:id="@+id/menu_moreapp"-->
+		          <!--android:title="@string/menu_moreapp"-->
+                  <!--app:showAsAction="never"/>-->
+
+
+</menu>
